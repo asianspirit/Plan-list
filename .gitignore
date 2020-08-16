@@ -1,1 +1,8 @@
-node_modules
+.DS_Store
+.AppleDouble
+.LSQverride
+.vs
+
+
+node_modules/
+app/css/

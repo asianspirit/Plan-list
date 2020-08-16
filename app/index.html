@@ -11,34 +11,35 @@
 
 <body>
 
-    <main>
-        <section class="plan">
-            <h1 class="plan__title">
-                Список на все случаи жизни...
-            </h1>
-            <form  class="add">
-                 <input type="text" class="add__input" placeholder="Добавить в список...">
-                 <div class="add-buttons">
-                     <button class="add-confirm">Добавить</button>
-                     <button class="add-reset">Сбросить</button>
-                 </div>
-            </form>
 
-            <ul class="plan-list">
-                <li class="plan-list__item">Пожрать
-                    <div class="trash"></div>
-                </li>
-                <li class="plan-list__item">Поспать
-                    <div class="trash"></div>
-                </li>
-                <li class="plan-list__item">Поныть
-                    <div class="trash"></div>
-                </li>
-            </ul>
-        </section>
+    <section class="plan">
+        <h1 class="plan__title">
+            Список на все случаи жизни
+        </h1>
+        <form class="add">
+            <input type="text" class="add__input" placeholder="Добавить в список...">
+            <div class="add-buttons">
+                <button type="submit" class="add-confirm">Добавить</button>
+                <button class="add-reset">Сбросить</button>
+            </div>
+        </form>
+
+        <ul class="plan-list">
+            <li class="plan-list__item">
+                <div class="checkbox">
+                    <p class="checkbox__label">
+                        Пожрать
+                    </p> 
+                </div>
+                <div class="trash">
+                    <img class="trash__img" src="images/icons/delete.svg" alt="trash-bin">
+                </div>
+            </li>
+         
+        </ul>
+    </section>
 
 
-    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
