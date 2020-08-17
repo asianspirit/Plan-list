@@ -11,7 +11,6 @@
     padding: 15px;
     background-color: #190d50;
     min-height: 365px;
-    border-radius: 20px;
 }
 
 .plan__title{
@@ -73,14 +72,14 @@ width: 100%;
 .trash__img{
     width: 22px;
     height: 22px;
+    cursor: pointer;
 }
-.checkbox{
-    position: relative;
-}
+
 
 
 .checkbox__label{
     padding-left: 30px;
+    position: relative;
     &::before{
      content: ""; 
      display: block;
@@ -104,6 +103,14 @@ width: 100%;
         top: 0;
         z-index: 2;
         opacity: 0;
+    }
+}
+
+.checkbox__label.active{
+ text-decoration: line-through;
+    &::after{
+        content:"";
+        opacity: 1;
     }
 }
 
